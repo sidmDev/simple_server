@@ -5,7 +5,7 @@ const port = 3000,
   httpStatus = require("http-status-codes"),
   app = http.createServer((request, response) => {
     console.log("Received an incoming request!");
-    response.writeHead(httpStatus.OK, {
+    response.writeHead(StatusCodes.OK, {
       "Content-Type": "text/html"
     });
 
